@@ -1,0 +1,24 @@
+hiring-automation-system/
+│
+├── config/
+│   ├── service_account.json        # Google credentials
+│   ├── settings.py                 # Folder IDs, Sheet IDs, Calendar ID
+│
+├── modules/
+│   ├── gmail_reader.py             # Fetch CVs from Gmail
+│   ├── drive_manager.py            # Upload files to Drive
+│   ├── cv_parser.py                # Parse PDF & DOCX
+│   ├── sheet_writer.py             # Update Google Sheet
+│   ├── candidate_scorer.py         # Score based on skills
+│   ├── whatsapp_sender.py          # Twilio WhatsApp messages
+│   ├── calendar_scheduler.py       # Schedule interviews
+│   ├── offer_generator.py          # Create offer letters
+│
+├── utils/
+│   ├── file_utils.py               # Save, rename, organize files
+│   ├── text_cleaner.py             # Cleanup text from CVs
+│
+├── main.py                         # Main automation script
+├── requirements.txt                # All dependencies
+├── README.md                       # Documentation
+└── .gitignore                      # ignore credentials/logs
